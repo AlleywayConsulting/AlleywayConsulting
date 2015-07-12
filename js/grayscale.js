@@ -168,7 +168,7 @@ function init() {
     var map = new google.maps.Map(mapElement, mapOptions);
 
     // Custom Map Marker Icon - Customize the map-marker.png file to customize your icon
-    var image = 'img/map-marker.png';
+    var image = 'img/title_map_cville.svg';
     var myLatLng = new google.maps.LatLng(38.0299, -78.4790);
     var beachMarker = new google.maps.Marker({
         position: myLatLng,
