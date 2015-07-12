@@ -25,7 +25,7 @@ h5,
 h6 {
     margin: 0 0 35px;
     text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: "Novo Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 700;
     letter-spacing: 1px;
 }
@@ -125,7 +125,7 @@ a:focus {
     }
     .navbar-custom .navbar-brand {
         font-weight: 700;
-        padding: 13px;
+        padding: 10px;
     }
     .navbar .navbar-logo {
         opacity: 0.0;
@@ -290,7 +290,7 @@ a:focus {
     width: 100%;
     padding: 50px 0;
     color: #fff;
-    background: url(/img/downloads-bg.jpg) no-repeat center center scroll;
+    background: url(/img/img_brick_path.jpg) no-repeat center center scroll;
     background-color: {{ site.color.primary-dark }};
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -329,16 +329,17 @@ a:focus {
 }
 
 .btn-default {
-    border: 1px solid {{ site.color.links }};
-    color: {{ site.color.links }};
+    border: 2px solid {{ site.color.links }};
+    color: #fff;
     background-color: transparent;
+    border-radius: 0px;
 }
 
 .btn-default:hover,
 .btn-default:focus {
-    border: 1px solid {{ site.color.links }};
+    border: 2px solid {{ site.color.links }};
     outline: 0;
-    color: {{ site.color.primary-dark }};
+    color: #fff;
     background-color: {{ site.color.links }};
 }
 
@@ -398,4 +399,7 @@ img::-moz-selection {
 
 body {
     webkit-tap-highlight-color: rgba(255,255,255,.2);
+}
+.footer-text {
+    font-size: 12px;
 }

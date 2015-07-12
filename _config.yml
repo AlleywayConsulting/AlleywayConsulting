@@ -7,7 +7,7 @@ description: "Custom software applications"
 # Color settings (hex-codes without the leading hash-tag)
 color:
   primary-dark: '#000000'
-  links: '#219ab3'
+  links: '#bf8c31'
 
 # Footer settings
 footer: Alleyway Consulting, LLC

@@ -38,7 +38,7 @@ function init() {
     // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
     var mapOptions = {
         // How zoomed in you want the map to start at (always required)
-        zoom: 6,
+        zoom: 7,
 
         // The latitude and longitude to center the map (always required)
         center: new google.maps.LatLng(38.0299, -78.4790), // Charlottesville
