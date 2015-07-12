@@ -38,10 +38,10 @@ function init() {
     // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
     var mapOptions = {
         // How zoomed in you want the map to start at (always required)
-        zoom: 15,
+        zoom: 6,
 
         // The latitude and longitude to center the map (always required)
-        center: new google.maps.LatLng(40.6700, -73.9400), // New York
+        center: new google.maps.LatLng(38.0299, -78.4790), // Charlottesville
 
         // Disables the default Google Maps UI components
         disableDefaultUI: true,
@@ -78,7 +78,7 @@ function init() {
             "featureType": "road.highway",
             "elementType": "geometry.stroke",
             "stylers": [{
-                "color": "#000000"
+                "color": "#ff000000"
             }, {
                 "lightness": 29
             }, {
@@ -145,17 +145,17 @@ function init() {
             "stylers": [{
                 "color": "#000000"
             }, {
-                "lightness": 20
+                "lightness": 10
             }]
         }, {
             "featureType": "administrative",
             "elementType": "geometry.stroke",
             "stylers": [{
-                "color": "#000000"
+                "color": "#ffffff"
             }, {
-                "lightness": 17
+                "lightness": 10
             }, {
-                "weight": 1.2
+                "weight": 1.0
             }]
         }]
     };
@@ -169,10 +169,12 @@ function init() {
 
     // Custom Map Marker Icon - Customize the map-marker.png file to customize your icon
     var image = 'img/map-marker.png';
-    var myLatLng = new google.maps.LatLng(40.6700, -73.9400);
+    var myLatLng = new google.maps.LatLng(38.0299, -78.4790);
     var beachMarker = new google.maps.Marker({
         position: myLatLng,
         map: map,
-        icon: image
+        icon: image,
+        title: "Charlottesville, VA"
+
     });
 }
