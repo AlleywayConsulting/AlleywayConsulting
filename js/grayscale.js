@@ -3,7 +3,7 @@
  * Code licensed under the Apache License v2.0.
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
-
+var map;
 // jQuery to collapse the navbar on scroll
 $(window).scroll(function() {
     if ($(".navbar").offset().top > 50) {
@@ -32,6 +32,10 @@ $('.navbar-collapse ul li a').click(function() {
 // Google Maps Scripts
 // When the window has finished loading create our google map below
 google.maps.event.addDomListener(window, 'load', init);
+
+$(window).resize(function(){
+    map.setCenter(new google.maps.LatLng(38.0299, -78.4790));
+});
 
 function init() {
     // Basic options for a simple Google Map
@@ -165,15 +169,25 @@ function init() {
     var mapElement = document.getElementById('map');
 
     // Create the Google Map using out element and options defined above
-    var map = new google.maps.Map(mapElement, mapOptions);
+    map = new google.maps.Map(mapElement, mapOptions);
 
     // Custom Map Marker Icon - Customize the map-marker.png file to customize your icon
-    var image = 'img/title_map_cville.svg';
+
+    var sizeX = 260;
+    var sizeY = 60;
+
+    var icon = {
+        url: 'img/title_map_cville.svg',
+        size: new google.maps.Size(sizeX, sizeY),
+        origin: new google.maps.Point(0, 0),
+        anchor: new google.maps.Point(sizeX/2, sizeY)
+    };
+
     var myLatLng = new google.maps.LatLng(38.0299, -78.4790);
     var beachMarker = new google.maps.Marker({
         position: myLatLng,
         map: map,
-        icon: image,
+        icon: icon,
         title: "Charlottesville, VA"
 
     });
