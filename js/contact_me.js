@@ -51,6 +51,7 @@ $(function() {
 
                     //clear all fields
                     $('#contactForm').trigger("reset");
+                    ga('send','event','button', 'message_sent');
                 },
                 error: function() {
                     // Fail message
