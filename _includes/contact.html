@@ -4,7 +4,7 @@
         <div class="col-lg-8 col-lg-offset-2">
             <h2>Contact</h2>
 
-            <p style="font-size: 20px; margin-bottom: 10px;"> Connect with us.</p><br/>
+            <p style="font-size: 20px; margin-bottom: 10px;">Get connected.</p><br/>
             <ul class="list-inline banner-social-buttons">
                 {% for network in site.social %}
                 <li>
@@ -20,7 +20,7 @@
 
         <div class="row">
             <br/>
-            <p class="text-center">Talk to us.</p>
+            <p class="text-center">Send a note.</p>
 
             <div class="col-lg-8 col-lg-offset-2">
                 <form method="POST" name="sentMessage"
@@ -68,4 +68,10 @@
                 </form>
             </div>
         </div>
+
+    <br/><br/>
+    <p class="text-center">Give us a call.<br/>&nbsp;<br/>
+        <a href="tel:+14342607732" onclick="ga('send','event','button', 'phone_clicked');" target="_blank" class="btn btn-default btn-lg"> +1 434 260-7732</a>
+    </p>
+
 </section>
