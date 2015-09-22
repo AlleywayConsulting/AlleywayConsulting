@@ -286,9 +286,8 @@ a:focus {
     padding-top: 100px;
 }
 #portfolio {
-    margin:0;
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 50px;
+    padding-bottom: 0px;
 }
 .experience-section {
     width: 100%;
