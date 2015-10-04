@@ -191,4 +191,18 @@ function init() {
         title: "Charlottesville, VA"
 
     });
+
+
+    wow = new WOW(
+        {
+            animateClass: 'animated',
+            offset:       100,
+            mobile:       false,       // trigger animations on mobile devices (default is true)
+            live:         true,       // act on asynchronously loaded content (default is true)
+            callback:     function(box) {
+                console.log("WOW: animating <" + box.tagName.toLowerCase() + ">")
+            }
+        }
+    );
+    wow.init();
 }
