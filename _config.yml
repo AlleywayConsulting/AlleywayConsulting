@@ -16,6 +16,8 @@ footer: Alleyway Consulting, LLC
 social:
   - title: linkedin
     url: http://linkedin.com/in/mlake900
+  - title: twitter
+    url: http://twitter.com/alleywayllc
 
 # Build settings
 markdown: kramdown

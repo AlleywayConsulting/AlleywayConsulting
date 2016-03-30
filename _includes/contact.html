@@ -8,7 +8,7 @@
             <ul class="list-inline banner-social-buttons">
                 {% for network in site.social %}
                 <li>
-                    <a href="{{ network.url }}" onclick="ga('send','event','button', 'social_clicked');" target="_blank" class="btn btn-default btn-lg"><i
+                    <a href="{{ network.url }}" rel="nofollow" onclick="ga('send','event','button', 'social_clicked');" target="_blank" class="btn btn-default btn-lg"><i
                             class="fa fa-{{ network.title }} fa-fw"></i> <span
                             class="network-name">{{ network.title }}</span></a>
                 </li>
@@ -71,7 +71,7 @@
 
     <br/><br/>
     <p class="text-center">Give us a call.<br/>&nbsp;<br/>
-        <a href="tel:+14342607732" onclick="ga('send','event','button', 'phone_clicked');" target="_blank" class="btn btn-default btn-lg"> +1 434 260-7732</a>
+        <a href="tel:+14342607732" rel="nofollow" onclick="ga('send','event','button', 'phone_clicked');" target="_blank" class="btn btn-default btn-lg"> +1 434 260-7732</a>
     </p>
 
 </section>
