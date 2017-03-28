@@ -290,6 +290,10 @@ a:focus {
     padding-top: 50px;
     padding-bottom: 0px;
 }
+
+.portfolio-image {
+    margin: 30px auto 80px auto;
+}
 .experience-section {
     width: 100%;
     padding: 50px 0;
