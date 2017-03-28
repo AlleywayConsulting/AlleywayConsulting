@@ -29,7 +29,7 @@ $(function() {
                 firstName = name.split(' ').slice(0, -1).join(' ');
             }
             $.ajax({
-                url: "//formspree.io/mlake@alleywayconsulting.com",
+                url: "//formspree.io/mlake@alleywayapps.com",
                 type: "POST",
                 data: {
                     name: name,
