@@ -1,2 +1,3 @@
 User-agent: *
 Disallow: /files/
+Disallow: /files/Michael_Lake_CV.pdf
