@@ -485,7 +485,12 @@ body {
     webkit-tap-highlight-color: rgba(255,255,255,.2);
 }
 .footer-text {
+    color: #ccc;
     font-size: 12px;
+}
+
+.footer-text a {
+    color: #ccc;
 }
 
 .circle {
@@ -535,3 +540,34 @@ body {
 
 }
 
+.aw-content {
+    color: #333;
+    background-color: #ebf0f1;
+    padding-top: 40px;
+}
+
+.aw-page-header{
+    min-height: 200px;
+    padding-top: 80px;
+
+    background: url('/img/texture-background.jpg');
+}
+
+.aw-page-header h1 {
+    text-transform: none;
+}
+.line-separator {
+    position: relative;
+    border-top: 8px solid #c7922e;
+    padding-bottom: 50px;
+    background-color: #ebf0f1;
+}
+
+.logo-banner {
+    top: -64px;
+    margin-right: -64px;
+    position: absolute;
+    right: 50%;
+    width: 128px;
+    z-index: 990;
+}
