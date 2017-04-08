@@ -117,7 +117,7 @@ a:focus {
 
 .navbar-custom .nav li a:focus {
     outline: 0;
-    background-color: rgba(0,0,0,.3);
+    background-color: rgba(0,0,0,0);
 }
 
 .navbar .navbar-logo {
