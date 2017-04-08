@@ -18,10 +18,14 @@ $(function() {
     $('a.page-scroll').bind('click', function(event) {
         var $anchor = $(this);
         var id = $anchor.attr('href');
-        if (id.indexOf("\/#") == 0){
+
+        if (id.indexOf("#") == 0 && window.location.pathname == "/") {
             $('html, body').stop().animate({
-                scrollTop: $(id.substr(1)).offset().top
+                scrollTop: $(id).offset().top
             }, 1500, 'easeInOutExpo');
+            event.preventDefault();
+        } else if (id.indexOf("#") == 0) {
+            window.location = "/" + id;
             event.preventDefault();
         }
     });
