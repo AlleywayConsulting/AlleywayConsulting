@@ -1,8 +1,21 @@
 <!-- Footer -->
 <footer>
     <div class="container">
-        <div class="col-lg-8 col-lg-offset-2">
-            <p class="footer-text">&copy; 2015 &ndash; 20{{ site.time | date: '%y' }} Alleyway Apps : <a href="/privacy">Privacy</a></p>
+        <div class="col-lg-6">
+
+            <p><a href="mailto:hello@alleywayapps.com" class="dotted-underline">hello@alleywayapps.com</a>&nbsp;&nbsp; :&nbsp;&nbsp;<a href="tel:+14342607732">434.260.7732</a></p>
+            <p class="footer-location-name">Charlottesville, VA</p>
+
+            <ul class="list-inline footer-social-links">
+                {% for network in site.social %}
+                <li style="padding-left: 0px">
+                    <a href="{{ network.url }}" rel="nofollow" onclick="ga('send','event','button', 'social_clicked');"
+                       target="_blank"><i class="fa fa-{{ network.title }} fa-fw"></i></a>
+                </li>
+                {% endfor %}
+            </ul>
+
+            <p class="footer-text">&copy; 20{{ site.time | date: '%y' }} Alleyway Apps : <a href="/privacy">Privacy</a></p>
         </div>
 
     </div>

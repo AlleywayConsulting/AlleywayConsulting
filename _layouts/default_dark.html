@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+{% include head.html %}
+
+<style>
+
+    @media (min-width: 767px) {
+        .navbar .navbar-logo {
+            opacity: 1.0;
+        }
+    }
+
+    /*.navbar-custom {*/
+        /*background-color: rgba(0, 0, 0, .8);*/
+        /*padding: 0;*/
+    /*}*/
+
+</style>
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+{% include nav.html %}
+
+{{content}}
+{% include footer.html %}
+{% include js.html %}
+</body>
+</html>
+
