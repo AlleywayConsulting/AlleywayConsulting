@@ -1,6 +1,6 @@
 ---
 layout: default_dark
-title: Phone a friend.
+title: Get in touch.
 ---
 
 
@@ -8,9 +8,35 @@ title: Phone a friend.
     <div class="intro-body">
         <div class="container">
             <div class="row">
-                <div class="col-md-8 col-md-offset-2">
+                <main class="col-md-12 ">
 
-                </div>
+                    <h2>Get in touch.</h2>
+
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <h4 class="contact-title">General</h4>
+                                <a href="mailto:hello@alleywayapps.com">hello@alleywayapps.com</a>
+                            </div>
+                            <div class="col-md-4">
+                                <h4 class="contact-title">Media</h4>
+                                <a href="mailto:press@alleywayapps.com">press@alleywayapps.com</a>
+
+                            </div>
+                            <div class="col-md-4">
+                                <h4 class="contact-title">Careers</h4>
+                                <a href="mailto:careers@alleywayapps.com">careers@alleywayapps.com</a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12" style="padding-top: 60px;">
+                                You can even call us at <a href="tel:+14342607732">434.260.7732</a> we're friendly!
+                            </div>
+                        </div>
+                    </div>
+
+
+                </main>
             </div>
         </div>
     </div>
@@ -20,16 +46,12 @@ title: Phone a friend.
 <section id="contact" class="container content-section">
     <div class="row text-center">
         <div class="col-lg-8 col-lg-offset-2">
-            <h2>Contact</h2>
 
-            <p style="font-size: 20px; margin-top: 80px; margin-bottom: 10px">Get connected.</p><br/>
             <ul class="list-inline banner-social-buttons">
                 {% for network in site.social %}
                 <li>
                     <a href="{{ network.url }}" rel="nofollow" onclick="ga('send','event','button', 'social_clicked');"
-                       target="_blank" class="btn btn-default btn-lg"><i
-                            class="fa fa-{{ network.title }} fa-fw"></i> <span
-                            class="network-name">{{ network.title }}</span></a>
+                       target="_blank"><i class="fa fa-{{ network.title }} fa-fw"></i></a>
                 </li>
                 {% endfor %}
             </ul>
@@ -38,7 +60,7 @@ title: Phone a friend.
 
 
     <div class="row text-center">
-        <div class="col-lg-8 col-lg-offset-2">
+        <div class="col-lg-8 col-lg-offset-2 hidden">
 
             <p class="text-center" style="margin-top: 120px; margin-bottom: 60px">Get something on the calendar.<br/>&nbsp;<br/>
                 <!--<a href="tel:+14342607732" rel="nofollow" onclick="ga('send','event','button', 'phone_clicked');" target="_blank" class="btn btn-default btn-lg"> +1 434 260-7732</a>-->
@@ -53,7 +75,7 @@ title: Phone a friend.
 
     <div class="row" style="margin-top: 120px; margin-bottom: 120px">
         <br/>
-        <p class="text-center">Send a note.</p>
+        <p class="text-center">Send us a note.</p>
 
         <div class="col-lg-8 col-lg-offset-2">
             <form method="POST" name="sentMessage"
@@ -103,6 +125,6 @@ title: Phone a friend.
     </div>
 </section>
 
-<div class="container-fluid alleyway-banner-short">
+<div class="container-fluid alleyway-banner-small">
 
 </div>

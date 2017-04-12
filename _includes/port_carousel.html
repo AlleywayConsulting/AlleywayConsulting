@@ -1,0 +1,79 @@
+<div class="container-fluid" style="margin-top: 100px;">
+
+
+
+    <div class="row">
+
+        <div class="col-md-8 col-md-offset-2">
+
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                <!-- Carousel indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                    <li data-target="#myCarousel" data-slide-to="3"></li>
+                    <li data-target="#myCarousel" data-slide-to="4"></li>
+                </ol>
+                <!-- Wrapper for carousel items -->
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <div class="container portfolio">
+                            <div class="row">
+                                {% include portfolio_bevwatch.html %}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="container portfolio">
+                            <div class="row">
+                                {% include portfolio_watch_ya_mouth.html %}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="container portfolio">
+                            <div class="row">
+                                {% include portfolio_mobileid.html %}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="container portfolio">
+                            <div class="row">
+                                {% include portfolio_gift_ticket.html %}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="container portfolio">
+                            <div class="row">
+                                {% include portfolio_cbic.html %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Carousel controls -->
+
+                <a class="carousel-control left" href="#myCarousel" data-slide="prev">
+                    <span class="fa fa-chevron-left"></span>
+                </a>
+                <a class="carousel-control right" href="#myCarousel" data-slide="next">
+                    <span class="fa fa-chevron-right"></span>
+                </a>
+
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("#myCarousel").carousel({
+
+        });
+    });
+</script>
+
