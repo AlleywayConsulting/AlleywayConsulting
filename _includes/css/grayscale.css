@@ -234,18 +234,7 @@ a:focus {
     padding: 100px 0;
     text-align: center;
     color: #fff;
-
     background: url('/img/phone_booth.jpg') 0 / cover fixed;
-
-    /*background: url('/img/phone_booth.jpg') no-repeat top center scroll;*/
-
-    /*background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 0.9) 100%), url('/img/phone_booth.jpg') no-repeat top center scroll;*/
-    /*background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(59%, rgba(0, 0, 0, 0)), color-stop(100%, rgba(0, 0, 0, 0.9))), url('/img/phone_booth.jpg') no-repeat top center scroll;*/
-    /*background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 0.9) 100%), url('/img/phone_booth.jpg') no-repeat top center scroll;*/
-    /*background: -o-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 0.9) 100%), url('/img/phone_booth.jpg') no-repeat top center scroll;*/
-    /*background: -ms-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 0.9) 100%), url('/img/phone_booth.jpg') no-repeat top center scroll;*/
-    /*background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 0.9) 100%), url('/img/phone_booth.jpg') no-repeat top center scroll;*/
-
     background-color: black;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -253,17 +242,13 @@ a:focus {
     -o-background-size: cover;
 }
 
-main::before {
-    /*background-image: url("/img/phone_booth.jpg"), linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5);*/
-
+.contact-intro main::before {
     background: linear-gradient(to bottom, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0.6) 100%), url('/img/phone_booth.jpg') 0 / cover fixed;
-
 }
 
-main {
+.contact-intro main {
     color: #333;
     border: 3px solid #C7922E;
-
     position: relative;
     padding: 50px 5px;
     background-color: hsla(0, 0%, 100%, 0.64);
@@ -273,11 +258,9 @@ main {
     box-shadow: 5px 3px 30px black;
     overflow: hidden;
     z-index: 1000;
-
-
 }
 
-main::before {
+.contact-intro main::before {
     content: '';
     margin: -35px;
     position: absolute;
@@ -291,7 +274,6 @@ main::before {
     -ms-filter: blur(11px);
     filter: blur(11px);
     filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius='11');
-
     z-index: -1;
 }
 
@@ -356,6 +338,118 @@ main::before {
 
 }
 
+.careers-intro {
+    display: table;
+    width: 100%;
+    height: auto;
+    padding: 100px 0;
+    text-align: center;
+    color: #fff;
+    background: url('/img/coffee_shop_girl.jpg') 0 / cover fixed;
+    background-position: center bottom;
+    background-color: black;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+.careers-intro main::before {
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0.6) 100%), url('/img/coffee_shop_girl.jpg') 0 / cover fixed;
+    background-position: center bottom;
+}
+
+.careers-intro main {
+    color: #333;
+    border: 3px solid #C7922E;
+    position: relative;
+    padding: 50px 5px;
+    background-color: hsla(0, 0%, 100%, 0.64);
+    font-size: 20px;
+    line-height: 1.5;
+    border-radius: 10px;
+    box-shadow: 5px 3px 30px black;
+    overflow: hidden;
+    z-index: 1000;
+}
+
+.careers-intro main::before {
+    content: '';
+    margin: -35px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    -webkit-filter: blur(11px);
+    -moz-filter: blur(11px);
+    -o-filter: blur(11px);
+    -ms-filter: blur(11px);
+    filter: blur(11px);
+    filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius='11');
+    z-index: -1;
+}
+
+.careers-intro .intro-body {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.careers-intro .intro-body .brand-heading {
+    font-size: 40px;
+}
+
+.careers-intro .intro-body .intro-text {
+    font-size: 11pt;
+}
+
+.careers-intro .intro-body .intro-logo {
+    width: 150px;
+}
+
+.careers-intro h2 {
+    font-size: 32px;
+    text-transform: none;
+}
+
+.careers-intro a {
+    font-size: 20px;
+    color: #3B3B3B;
+    border-bottom: 1px dotted black;
+}
+
+.contact-title {
+    text-transform: uppercase;
+    letter-spacing: .26em;
+    font-size: 14px;
+    color: #2a3f68;
+    font-weight: bold;
+    margin-bottom: 12px;
+    margin-top: 22px;
+}
+
+@media(min-width:767px) {
+    .careers-intro h2 {
+        font-size: 64px;
+    }
+    .careers-intro {
+        height: 100%;
+        padding: 0;
+    }
+
+    .careers-intro .intro-body .brand-heading {
+        font-size: 100px;
+    }
+
+    .careers-intro .intro-body .intro-text {
+        font-size: 25px;
+    }
+    .careers-intro .intro-body .intro-logo {
+        padding-top:60px;
+        width: 300px;
+    }
+
+}
 .btn-circle {
     width: 70px;
     height: 70px;
