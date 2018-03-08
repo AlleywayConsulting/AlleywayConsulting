@@ -7,4 +7,3 @@ Theme based on [Grayscale](http://ironsummitmedia.github.io/startbootstrap-grays
 
 run "jekyll serve" and make edits
 
-
